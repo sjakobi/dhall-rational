@@ -1,0 +1,7 @@
+let Rational = ./Type
+
+let denominator
+    : Rational → Natural
+    = λ(x : Rational) → x.predenominator + 1
+
+in  denominator

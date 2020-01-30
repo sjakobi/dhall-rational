@@ -1,0 +1,17 @@
+let Prelude = ./Prelude
+
+let Rational = ./Type
+
+let commonDenominator = ./commonDenominator
+
+let subtract
+    : Rational → Rational → Rational
+    =   λ(a : Rational)
+      → λ(b : Rational)
+      → let cd = commonDenominator a b
+
+        in  { numerator = Prelude.Integer.subtract cd.a cd.b
+            , predenominator = cd.predenominator
+            }
+
+in  subtract

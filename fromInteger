@@ -1,0 +1,7 @@
+let Rational = ./Type
+
+let fromInteger
+    : Integer → Rational
+    = λ(i : Integer) → { numerator = i, predenominator = 0 }
+
+in  fromInteger

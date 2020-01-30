@@ -1,0 +1,3 @@
+let Rational = { numerator : Integer, predenominator : Natural }
+
+in Rational

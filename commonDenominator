@@ -1,0 +1,27 @@
+-- TODO: GCD? Or at least test denominators for equality?
+let Prelude = ./Prelude
+
+let Rational = ./Type
+
+let CommonDenominator = ./CommonDenominator
+
+let denominator = ./denominator
+
+let commonDenominator
+    : Rational → Rational → CommonDenominator
+    =   λ(a : Rational)
+      → λ(b : Rational)
+      → let denomA = denominator a
+
+        let denomB = denominator b
+
+        let denom = denomA * denomB
+
+        in  { a =
+                Prelude.Integer.multiply a.numerator (Natural/toInteger denomB)
+            , b =
+                Prelude.Integer.multiply b.numerator (Natural/toInteger denomA)
+            , predenominator = Natural/subtract 1 denom
+            }
+
+in  commonDenominator

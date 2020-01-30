@@ -1,0 +1,10 @@
+let Rational = ./Type
+
+let negate = ./negate
+
+let subtract = ./subtract
+
+let add : Rational -> Rational -> Rational =
+  \(a : Rational) -> \(b : Rational) -> subtract (negate a) b
+
+in add

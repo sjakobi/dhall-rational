@@ -1,0 +1,15 @@
+let Prelude = ./Prelude
+
+let Rational = ./Type
+
+let commonDenominator = ./commonDenominator
+
+let lessThanEqual
+    : Rational → Rational → Bool
+    =   λ(a : Rational)
+      → λ(b : Rational)
+      → let cd = commonDenominator a b
+
+        in  Prelude.Integer.lessThanEqual cd.a cd.b
+
+in  lessThanEqual

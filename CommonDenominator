@@ -1,0 +1,3 @@
+let CommonDenominator = { a : Integer, b : Integer, predenominator : Natural }
+
+in CommonDenominator

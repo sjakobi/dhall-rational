@@ -1,0 +1,9 @@
+let Rational = ./Type
+
+let denominator = ./denominator
+
+let show
+    : Rational → Text
+    = λ(x : Rational) → "${Integer/show x.numerator}/${Natural/show (denominator x)}"
+
+in  show

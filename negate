@@ -1,0 +1,10 @@
+let Rational = ./Type
+
+let negate
+    : Rational → Rational
+    =   λ(x : Rational)
+      → { numerator = Integer/negate x.numerator
+        , predenominator = x.predenominator
+        }
+
+in  negate

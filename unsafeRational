@@ -1,0 +1,13 @@
+-- The denominator must not be zero!
+
+let Rational = ./Type
+
+let unsafeRational
+    : Integer → Natural → Rational
+    =   λ(numerator : Integer)
+      → λ(denominator : Natural)
+      → { numerator = numerator
+        , predenominator = Natural/subtract 1 denominator
+        }
+
+in  unsafeRational

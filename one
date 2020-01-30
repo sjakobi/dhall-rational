@@ -1,0 +1,7 @@
+let Rational = ./Type
+
+let one
+    : Rational
+    = ./fromInteger +1
+
+in  one
