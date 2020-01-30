@@ -10,7 +10,7 @@ let multiply
       → λ(b : Rational)
       → let cd = commonDenominator a b
 
-        in  { numerator = Prelude.Integer.multiply cd.a cd.b
+        in  { numerator = Prelude.Integer.multiply a.numerator b.numerator
             , predenominator = cd.predenominator
             }
 
