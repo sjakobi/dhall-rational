@@ -4,6 +4,7 @@
 , commonDenominator = ./commonDenominator
 , denominator = ./denominator
 , e = ./e
+, equal = ./equal
 , fromInteger = ./fromInteger
 , lessThanEqual = ./lessThanEqual
 , multiply = ./multiply

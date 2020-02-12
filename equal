@@ -1,0 +1,22 @@
+let Prelude = ./Prelude
+
+let Rational = ./Type
+
+let commonDenominator = ./commonDenominator
+
+let equal
+    : Rational → Rational → Bool
+    =   λ(a : Rational)
+      → λ(b : Rational)
+      → let cd = commonDenominator a b
+
+        in  Prelude.Integer.equal cd.a cd.b
+
+let example0 = assert : equal ./zero ./one === False
+
+let example1 = assert : equal (./unsafeRational +1 2) (./unsafeRational +2 4) === True
+
+let reflexivity = \(x : Rational) -> assert : equal x x === True
+
+
+in  equal
