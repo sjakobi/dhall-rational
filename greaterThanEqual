@@ -1,0 +1,7 @@
+let Rational = ./Type
+
+let lessThanEqual = ./lessThanEqual
+
+let greaterThanEqual = \(a : Rational) -> \(b : Rational) -> lessThanEqual b a
+
+in greaterThanEqual

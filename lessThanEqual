@@ -12,6 +12,6 @@ let lessThanEqual
 
         in  Prelude.Integer.lessThanEqual cd.a cd.b
 
-let example = assert : lessThanEqual ./zero ./one === True
+let example = assert : lessThanEqual ./zero ./one ≡ True
 
 in  lessThanEqual

@@ -1,0 +1,13 @@
+let Rational = ./Type
+
+let Prelude = ./Prelude
+
+let isZero
+    : Rational → Bool
+    = λ(x : Rational) → Prelude.Integer.equal +0 x.numerator
+
+let example0 = assert : isZero ./zero ≡ True
+
+let example0 = assert : isZero ./one ≡ False
+
+in  isZero

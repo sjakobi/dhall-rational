@@ -1,0 +1,9 @@
+let Rational = ./Type
+
+let greaterThanEqual = ./greaterThanEqual
+
+let lessThan = λ(a : Rational) → λ(b : Rational) → greaterThanEqual a b == False
+
+let example = assert : lessThan ./one ./zero ≡ False
+
+in  lessThan
