@@ -6,6 +6,7 @@
 , e = ./e
 , equal = ./equal
 , fromInteger = ./fromInteger
+, fromNatural = ./fromNatural
 , greaterThan = ./greaterThan
 , greaterThanEqual = ./greaterThanEqual
 , isZero = ./isZero

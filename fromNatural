@@ -1,0 +1,7 @@
+let Rational = ./Type
+
+let fromInteger = ./fromInteger
+
+let fromNatural : Natural -> Rational = λ(n : Natural) → fromInteger (Natural/toInteger n)
+
+in  fromNatural
